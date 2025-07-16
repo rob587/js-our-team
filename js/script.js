@@ -62,5 +62,10 @@ const cardGenerate = (member) => {
                 </div>
             </div>
             `
-      return cardSingola
+      return singleCard
+}
+
+for (let i = 0; i<teamMembers.length; i++){
+  let card = cardGenerate(teamMembers[i]);
+  cardContainer.innerHTML += card
 }
