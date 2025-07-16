@@ -36,3 +36,31 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+const cardContainer = document.getElementById('cardContainer')
+
+const cardGenerate = (member) => {
+
+  const {name, role, email, img} = member;
+
+  const singleCard = `
+              <div class="col-4">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-4 bg-black">
+                            <img src="img/male1.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-8 bg-black">
+                            <div class="card-body text-light fw-bold">
+                                <h5 class="card-title ">Marco Bianchi</h5>
+                                <p class="card-text">Designer</p>
+                                <p class="card-text text-info">marcobianchi@team.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `
+      return cardSingola
+}
